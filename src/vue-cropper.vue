@@ -470,7 +470,7 @@ export default {
 
       // 判断如果不是base64图片 再添加crossOrigin属性，否则会导致iOS低版本(10.2)无法显示图片
       if (this.img.substr(0, 4) !== 'data') {
-        img.crossOrigin = '';
+        img.crossOrigin = 'anonymous';
       }
 
       if (this.isIE) {
@@ -1376,7 +1376,7 @@ export default {
       // 判断图片是否是base64
       var s = this.img.substr(0, 4);
       if (s !== "data") {
-        img.crossOrigin = "Anonymous";
+        img.crossOrigin = "anonymous";
       }
       img.src = this.imgs;
 
