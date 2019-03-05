@@ -1583,7 +1583,7 @@ export default {
         h = this.h;
         w = (h / this.fixedNumber[1]) * this.fixedNumber[0];
       }
-      this.changeCrop(w, h);
+      this.changeCrop(1024, 512);
     },
     // 手动改变截图框大小函数
     changeCrop(w, h) {
